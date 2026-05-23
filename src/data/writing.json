@@ -1,0 +1,119 @@
+[
+  {
+    "id": "w001",
+    "type": "independent",
+    "prompt": "Do you agree or disagree with the following statement: The Internet has made people more isolated from one another, despite connecting them digitally. Use specific reasons and examples to support your opinion. You have 30 minutes to plan and write your response. A response of 300 words or more is typically considered adequate.",
+    "timeLimitMinutes": 30,
+    "targetWords": 300
+  },
+  {
+    "id": "w002",
+    "type": "independent",
+    "prompt": "Some people believe that a government's first responsibility is to the well-being of its own citizens, even if this means providing less help to people in other countries. Do you agree or disagree with this view? Use specific reasons and examples to support your answer.",
+    "timeLimitMinutes": 30,
+    "targetWords": 300
+  },
+  {
+    "id": "w003",
+    "type": "independent",
+    "prompt": "Do you agree or disagree with the following statement: Children who spend a great deal of time watching television and playing video games suffer negative consequences in their development. Support your response with specific reasons and examples.",
+    "timeLimitMinutes": 30,
+    "targetWords": 300
+  },
+  {
+    "id": "w004",
+    "type": "independent",
+    "prompt": "Some people argue that individuals can do very little to address major environmental problems without government intervention and legislation. Others believe that individual actions, collectively, can make a significant difference. Do you agree or disagree? Support your position with specific reasons.",
+    "timeLimitMinutes": 30,
+    "targetWords": 300
+  },
+  {
+    "id": "w005",
+    "type": "independent",
+    "prompt": "Do you agree or disagree: The ability to work effectively in teams is more important for career success than individual talent and ability. Use specific reasons and examples to explain your position.",
+    "timeLimitMinutes": 30,
+    "targetWords": 300
+  },
+  {
+    "id": "w006",
+    "type": "independent",
+    "prompt": "Is it more important for students to develop practical life skills (such as financial management, cooking, or communication) in school, or academic knowledge (such as literature, history, and science)? Explain your view with specific reasons.",
+    "timeLimitMinutes": 30,
+    "targetWords": 300
+  },
+  {
+    "id": "w007",
+    "type": "independent",
+    "prompt": "Do you agree or disagree: A country benefits more from encouraging its citizens to study science and technology than the arts and humanities. Use specific reasons and examples to support your position.",
+    "timeLimitMinutes": 30,
+    "targetWords": 300
+  },
+  {
+    "id": "w008",
+    "type": "independent",
+    "prompt": "Some people argue that social media has had a net positive effect on political participation and democracy. Others strongly disagree. Which view do you support? Use specific reasons and examples in your response.",
+    "timeLimitMinutes": 30,
+    "targetWords": 300
+  },
+  {
+    "id": "w009",
+    "type": "independent",
+    "prompt": "Do you think the increasing use of artificial intelligence in the workplace is primarily a positive or negative development? Explain your position with specific reasons and examples.",
+    "timeLimitMinutes": 30,
+    "targetWords": 300
+  },
+  {
+    "id": "w010",
+    "type": "independent",
+    "prompt": "Some argue that preserving traditional cultural practices and customs is more important than adapting them to suit modern circumstances and values. To what extent do you agree with this view?",
+    "timeLimitMinutes": 30,
+    "targetWords": 300
+  },
+  {
+    "id": "w011",
+    "type": "integrated",
+    "readingTitle": "The Case for a Four-Day Work Week",
+    "reading": "Proponents of a four-day work week argue that reducing working hours increases employee productivity, improves mental and physical health, and reduces workplace burnout. Studies from Iceland, Japan, and the United Kingdom have found that when companies reduced hours without cutting pay, output remained the same or improved. Workers reported better sleep, more time for family and exercise, and lower levels of stress. Advocates argue that in knowledge-intensive industries, it is the quality rather than the quantity of work hours that determines performance. Furthermore, environmental benefits are significant: fewer commutes and reduced office energy use contribute meaningfully to carbon footprint reduction. The four-day model, supporters claim, is a straightforward win for employers, workers, and society.",
+    "lectureTitle": "Challenging the Four-Day Work Week",
+    "lecture": "In a recent discussion, a professor challenged the rosy picture painted by four-day work week advocates. While she acknowledged the Iceland and UK studies, she pointed out that most of these trials involved relatively small, knowledge-sector companies and that results may not generalize to manufacturing, healthcare, retail, or service industries where continuous staffing is essential. She also raised concerns about workload compression: if the same amount of work must be completed in fewer hours, employees may face more intense pressure, potentially negating the health benefits. Additionally, she noted that client-facing industries often cannot afford reduced availability, and that businesses may face competitive disadvantages if competitors maintain traditional hours. The environmental gains, she argued, depend heavily on whether employees actually commute less, which may not be the case if remote work is not part of the model.",
+    "prompt": "Summarize the points made in the discussion and explain how they challenge the claims made in the reading passage. You have 20 minutes. Your response should be approximately 150–225 words.",
+    "timeLimitMinutes": 20,
+    "targetWords": 200
+  },
+  {
+    "id": "w012",
+    "type": "integrated",
+    "readingTitle": "Nuclear Energy as a Climate Solution",
+    "reading": "As nations seek low-carbon electricity sources to address climate change, nuclear energy has attracted renewed attention. Unlike solar and wind power, nuclear plants generate electricity continuously regardless of weather conditions, providing reliable baseload power. Modern reactor designs are significantly safer than older generations, incorporating passive cooling systems that do not require electrical power to prevent meltdowns. Nuclear power produces minimal greenhouse gas emissions over its lifecycle — far less than fossil fuels and comparable to wind and solar. Proponents argue that any serious decarbonization strategy must include nuclear energy, particularly for countries that lack sufficient solar or wind resources to meet their needs.",
+    "lectureTitle": "Rethinking Nuclear's Role",
+    "lecture": "A professor recently argued that while nuclear energy has clear advantages, several significant drawbacks are often underemphasized by its proponents. He first addressed the problem of nuclear waste: spent fuel remains radioactive for thousands of years, and no country has yet opened a permanent geological repository for high-level waste. The construction costs of new nuclear plants have ballooned far beyond projections in recent decades, with projects in France and the United States running billions of dollars over budget. He also noted that the time required to plan, approve, and build a new nuclear plant typically ranges from ten to fifteen years — too slow to meet urgent climate deadlines. Finally, he pointed out that the proliferation risk, while manageable in stable democracies, becomes a serious concern when nuclear technology spreads to politically unstable regions.",
+    "prompt": "Summarize the points made in the discussion and explain how they respond to the specific claims made in the reading passage. You have 20 minutes. Your response should be approximately 150–225 words.",
+    "timeLimitMinutes": 20,
+    "targetWords": 200
+  },
+  {
+    "id": "w013",
+    "type": "integrated",
+    "readingTitle": "Benefits of Standardized Testing in Education",
+    "reading": "Standardized tests have long been a cornerstone of educational assessment. Supporters argue that they provide an objective, consistent measure of student achievement that is immune to the biases inherent in teacher grading. They create accountability — schools and teachers whose students perform poorly can be identified and given additional support or resources. For university admissions, standardized tests allow fair comparison of students from vastly different educational backgrounds. Proponents also argue that regular testing motivates students to study and review material systematically, improving long-term retention of knowledge.",
+    "lectureTitle": "Problems with Standardized Testing",
+    "lecture": "A professor recently took issue with the prevailing enthusiasm for standardized testing. She argued that so-called 'objective' tests are often culturally biased — questions may reflect experiences and vocabulary more familiar to students from advantaged backgrounds, systematically disadvantaging minority and low-income students. She also challenged the accountability argument, noting that when school funding is tied to test scores, schools in poorer districts face a perverse cycle: underperformance leads to reduced resources, which leads to further underperformance. Rather than motivating genuine learning, she contended, high-stakes testing encourages 'teaching to the test,' narrowing the curriculum and reducing time for creative, critical, and interdisciplinary learning. She cited research showing that countries with the highest student well-being and academic achievement tend to rely less on standardized testing than countries such as the United States.",
+    "prompt": "Summarize the arguments made in the discussion and explain how they challenge the claims in the reading passage. Your response should be approximately 150–225 words and completed within 20 minutes.",
+    "timeLimitMinutes": 20,
+    "targetWords": 200
+  },
+  {
+    "id": "w014",
+    "type": "independent",
+    "prompt": "Do you agree or disagree: It is better to make decisions quickly rather than spending a great deal of time thinking them through. Support your position with specific reasons and examples.",
+    "timeLimitMinutes": 30,
+    "targetWords": 300
+  },
+  {
+    "id": "w015",
+    "type": "independent",
+    "prompt": "Some people believe that the best way to learn about a different culture is to live in that country for a period of time. Others believe you can learn just as much by reading, watching films, and speaking with people from that culture in your own country. Which view do you support? Use specific reasons and examples.",
+    "timeLimitMinutes": 30,
+    "targetWords": 300
+  }
+]
