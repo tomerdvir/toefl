@@ -69,17 +69,21 @@ export default function Speaking() {
 
   return (
     <main className="max-w-3xl mx-auto px-4 py-6">
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-2 text-sm text-slate-500">
-          <Link to="/" className="hover:text-slate-700">
-            Dashboard
-          </Link>
-          <span>›</span>
-          <span className="text-slate-700 font-medium">Speaking</span>
+      {/* Page header */}
+      <div className="flex items-center justify-between mb-6 bg-white border border-slate-200 rounded-2xl px-5 py-4 shadow-sm">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 bg-orange-50 rounded-xl flex items-center justify-center text-xl">🎙️</div>
+          <div>
+            <Link to="/" className="text-xs text-slate-400 hover:text-orange-500 transition-colors">
+              ← Dashboard
+            </Link>
+            <h1 className="font-bold text-slate-800 leading-tight">Speaking</h1>
+          </div>
         </div>
-        <span className="text-sm text-slate-400">
-          {stats.completed} / {stats.total} completed
-        </span>
+        <div className="text-right">
+          <div className="text-sm font-bold text-slate-700">{stats.completed} / {stats.total}</div>
+          <div className="text-xs text-slate-400">completed</div>
+        </div>
       </div>
 
       {status === 'offline' && <OllamaSetup onRecheck={recheck} />}
@@ -125,15 +129,25 @@ export default function Speaking() {
         <button
           onClick={handleEvaluate}
           disabled={!response.trim() || evaluating || status !== 'online'}
-          className="w-full bg-orange-500 hover:bg-orange-600 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-semibold py-2.5 rounded-xl transition-colors mb-4"
+          className="w-full bg-gradient-to-r from-orange-500 to-amber-400 hover:from-orange-600 hover:to-amber-500 disabled:from-slate-300 disabled:to-slate-300 disabled:cursor-not-allowed text-white font-semibold py-2.5 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-2"
         >
-          {evaluating ? 'Evaluating…' : 'Evaluate with Gemma 4'}
+          {evaluating ? (
+            <>
+              <svg className="animate-spin h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />
+              </svg>
+              Evaluating…
+            </>
+          ) : (
+            'Evaluate with Gemma 4'
+          )}
         </button>
       )}
 
       {/* Results */}
       {result && (
-        <div className="bg-white border border-slate-200 rounded-xl p-5 mb-4">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5 mb-4 shadow-sm">
           <div className="flex items-center justify-between mb-4">
             <h3 className="font-bold text-lg text-slate-800">AI Evaluation</h3>
             <div className="text-center">
@@ -178,7 +192,7 @@ export default function Speaking() {
 
           <button
             onClick={handleNext}
-            className="w-full mt-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-xl transition-colors"
+            className="w-full mt-4 bg-gradient-to-r from-orange-500 to-amber-400 hover:from-orange-600 hover:to-amber-500 text-white font-semibold py-2.5 rounded-xl transition-all shadow-sm hover:shadow-md"
           >
             Next Prompt →
           </button>

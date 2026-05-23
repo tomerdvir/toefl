@@ -114,17 +114,21 @@ export default function Listening() {
 
   return (
     <main className="max-w-5xl mx-auto px-4 py-6">
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-2 text-sm text-slate-500">
-          <Link to="/" className="hover:text-slate-700">
-            Dashboard
-          </Link>
-          <span>›</span>
-          <span className="text-slate-700 font-medium">Listening</span>
+      {/* Page header */}
+      <div className="flex items-center justify-between mb-6 bg-white border border-slate-200 rounded-2xl px-5 py-4 shadow-sm">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 bg-purple-50 rounded-xl flex items-center justify-center text-xl">🎧</div>
+          <div>
+            <Link to="/" className="text-xs text-slate-400 hover:text-purple-500 transition-colors">
+              ← Dashboard
+            </Link>
+            <h1 className="font-bold text-slate-800 leading-tight">Listening</h1>
+          </div>
         </div>
-        <span className="text-sm text-slate-400">
-          {stats.completed} / {stats.total} completed
-        </span>
+        <div className="text-right">
+          <div className="text-sm font-bold text-slate-700">{stats.completed} / {stats.total}</div>
+          <div className="text-xs text-slate-400">completed</div>
+        </div>
       </div>
 
       <div className="flex items-center gap-2 mb-1">
@@ -172,7 +176,7 @@ export default function Listening() {
       )}
 
       {/* Questions */}
-      <div className="bg-white border border-slate-200 rounded-xl p-5">
+      <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
         <p className="text-xs text-slate-400 mb-4">
           Answer all {item.questions.length} questions below.
         </p>
@@ -198,21 +202,35 @@ export default function Listening() {
             <p className="font-bold text-lg">
               {score.correct}/{score.total} correct ({score.pct}%)
             </p>
+            <p className="text-sm mt-0.5">
+              {score.pct >= 70 ? 'Good work! Keep it up.' : 'Review the highlighted answers below.'}
+            </p>
           </div>
         )}
 
         {!submitted ? (
-          <button
-            onClick={handleSubmit}
-            disabled={!allAnswered}
-            className="w-full bg-purple-600 hover:bg-purple-700 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-semibold py-2.5 rounded-xl transition-colors"
-          >
-            {allAnswered ? 'Submit Answers' : `Answer all ${item.questions.length} questions`}
-          </button>
+          <>
+            <div className="flex justify-between text-xs text-slate-400 mb-2">
+              <span>{Object.keys(answers).length} / {item.questions.length} answered</span>
+              <div className="w-32 bg-gray-200 rounded-full h-1.5 self-center">
+                <div
+                  className="bg-purple-400 h-1.5 rounded-full transition-all"
+                  style={{ width: `${Math.round((Object.keys(answers).length / item.questions.length) * 100)}%` }}
+                />
+              </div>
+            </div>
+            <button
+              onClick={handleSubmit}
+              disabled={!allAnswered}
+              className="w-full bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-700 hover:to-purple-600 disabled:from-slate-300 disabled:to-slate-300 disabled:cursor-not-allowed text-white font-semibold py-2.5 rounded-xl transition-all shadow-sm hover:shadow-md"
+            >
+              {allAnswered ? 'Submit Answers' : `Answer all ${item.questions.length} questions`}
+            </button>
+          </>
         ) : (
           <button
             onClick={handleNext}
-            className="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2.5 rounded-xl transition-colors"
+            className="w-full bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-700 hover:to-purple-600 text-white font-semibold py-2.5 rounded-xl transition-all shadow-sm hover:shadow-md"
           >
             Next Transcript →
           </button>
